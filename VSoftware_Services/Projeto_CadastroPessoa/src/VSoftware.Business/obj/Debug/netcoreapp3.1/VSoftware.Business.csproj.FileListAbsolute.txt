@@ -1,0 +1,16 @@
+C:\Users\Prodwin\Desktop\Projeto_VisualSoft\Projeto_CadastroPessoa\src\VSoftware.Business\bin\Debug\netcoreapp3.1\VSoftware.Business.deps.json
+C:\Users\Prodwin\Desktop\Projeto_VisualSoft\Projeto_CadastroPessoa\src\VSoftware.Business\bin\Debug\netcoreapp3.1\VSoftware.Business.dll
+C:\Users\Prodwin\Desktop\Projeto_VisualSoft\Projeto_CadastroPessoa\src\VSoftware.Business\bin\Debug\netcoreapp3.1\VSoftware.Business.pdb
+C:\Users\Prodwin\Desktop\Projeto_VisualSoft\Projeto_CadastroPessoa\src\VSoftware.Business\obj\Debug\netcoreapp3.1\VSoftware.Business.AssemblyInfoInputs.cache
+C:\Users\Prodwin\Desktop\Projeto_VisualSoft\Projeto_CadastroPessoa\src\VSoftware.Business\obj\Debug\netcoreapp3.1\VSoftware.Business.AssemblyInfo.cs
+C:\Users\Prodwin\Desktop\Projeto_VisualSoft\Projeto_CadastroPessoa\src\VSoftware.Business\obj\Debug\netcoreapp3.1\VSoftware.Business.dll
+C:\Users\Prodwin\Desktop\Projeto_VisualSoft\Projeto_CadastroPessoa\src\VSoftware.Business\obj\Debug\netcoreapp3.1\VSoftware.Business.pdb
+C:\Users\Prodwin\Desktop\Projeto_VisualSoft\Projeto_CadastroPessoa\src\VSoftware.Business\obj\Debug\netcoreapp3.1\VSoftware.Business.csprojAssemblyReference.cache
+C:\Users\Prodwin\Desktop\VSoftware_Services\Projeto_CadastroPessoa\src\VSoftware.Business\bin\Debug\netcoreapp3.1\VSoftware.Business.deps.json
+C:\Users\Prodwin\Desktop\VSoftware_Services\Projeto_CadastroPessoa\src\VSoftware.Business\bin\Debug\netcoreapp3.1\VSoftware.Business.dll
+C:\Users\Prodwin\Desktop\VSoftware_Services\Projeto_CadastroPessoa\src\VSoftware.Business\bin\Debug\netcoreapp3.1\VSoftware.Business.pdb
+C:\Users\Prodwin\Desktop\VSoftware_Services\Projeto_CadastroPessoa\src\VSoftware.Business\obj\Debug\netcoreapp3.1\VSoftware.Business.AssemblyInfoInputs.cache
+C:\Users\Prodwin\Desktop\VSoftware_Services\Projeto_CadastroPessoa\src\VSoftware.Business\obj\Debug\netcoreapp3.1\VSoftware.Business.AssemblyInfo.cs
+C:\Users\Prodwin\Desktop\VSoftware_Services\Projeto_CadastroPessoa\src\VSoftware.Business\obj\Debug\netcoreapp3.1\VSoftware.Business.dll
+C:\Users\Prodwin\Desktop\VSoftware_Services\Projeto_CadastroPessoa\src\VSoftware.Business\obj\Debug\netcoreapp3.1\VSoftware.Business.pdb
+C:\Users\Prodwin\Desktop\VSoftware_Services\Projeto_CadastroPessoa\src\VSoftware.Business\obj\Debug\netcoreapp3.1\VSoftware.Business.csprojAssemblyReference.cache

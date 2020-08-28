@@ -1,0 +1,61 @@
+﻿@model VSoftware.IO.ViewModels.PessoaViewModel
+@{
+    ViewData["Title"] = "Detalhes da Pessoa - " + Model.Nome;
+}
+
+<h4 style="padding-top: 50px;">@ViewData["Title"]</h4>
+<hr />
+<div class="row">
+
+    <div class="col-md-6">
+        <dl>
+            <dt>
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Documento)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Documento)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.OpcaoSexual)
+            </dt>
+            <dd>
+                <input type="radio" value="1" disabled checked="@(Model.OpcaoSexual == 1)" />  Masculino<br />
+                <input type="radio" value="2" disabled checked="@(Model.OpcaoSexual == 2)" />  Feminino <br />
+                <input type="radio" value="3" disabled checked="@(Model.OpcaoSexual == 3)" />  Outros
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Idade)
+            </dt>
+            <dt>
+                @Html.DisplayFor(model => model.Idade)
+            </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DataNascimento)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Profissao)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Profissao)
+            </dd>
+
+        </dl>
+
+        <div>
+            <a class="btn btn-dark" asp-action="Edit" asp-route-id="@Model.Id">Editar</a>
+            <a class="btn btn-info" href="javascript:window.history.back();">Voltar</a>
+        </div>
+    </div>
+</div>

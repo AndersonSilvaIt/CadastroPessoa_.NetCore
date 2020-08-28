@@ -1,0 +1,103 @@
+﻿@*@model IEnumerable<VSoftware.IO.ViewModels.PessoaViewModel>*@
+@model PaginatedList<VSoftware.IO.ViewModels.PessoaViewModel>
+@{
+    ViewData["Title"] = "Lista de Pessoas";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Buscar" method="Get">
+    <div id="divPesquisa">
+        <div>
+            <label>Nome:</label>
+            <input type="text" name="filtroNome" class="form-control col-md-4" value="@ViewData["FiltroNome"]" />
+        </div>
+        <div>
+            <label>Documento:</label>
+            <input type="text" name="filtroDocumento" class="form-control col-md-4" value="@ViewData["FiltroDocumento"]" /><br />
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Procurar" class="btn btn-primary" />
+        <a class="btn btn-info" asp-controller="Pessoa" asp-action="Refresh"><span class="fa fa-sync"></span></a>
+    </div>
+    <br />
+</form>
+
+<p>
+    <a class="btn btn-success" asp-action="Create">Nova Pessoa</a>
+    <span class="btn btn-default">@Model.QtdCadaster registro(s) encontrados(s)</span>
+</p>
+
+@{
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th> Nome </th>
+                <th> Idade </th>
+                <th> Data Nascimento </th>
+                <th> Sexo </th>
+                <th> Profissão </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Idade)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataNascimento)
+                    </td>
+                    <td>
+                        @switch (item.OpcaoSexual)
+                        {
+                            case 1:<label>Masculino</label>
+                                break;
+
+                            case 2:<label>Feminino</label>
+                                break;
+
+                            case 3:<label>Outros</label>
+                                break;
+
+                            default: <label>" "</label>
+                                break;
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Profissao)
+                    </td>
+                    <td class="text-right">
+                        <a class="btn btn-info" asp-controller="Pessoa" asp-action="Details" asp-route-id="@item.Id"><span class="fa fa-search"></span></a>
+                        <a class="btn btn-warning" asp-controller="Pessoa" asp-action="Edit" asp-route-id="@item.Id"><span class="fa fa-pencil-alt"></span></a>
+                        <a class="btn btn-danger" asp-controller="Pessoa" asp-action="Delete" asp-route-id="@item.Id"><span class="fa fa-trash"></span></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="Index"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   class="btn btn-light @prevDisabled">
+    Anterior
+</a>
+<a asp-action="Index"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   class="btn btn-light @nextDisabled">
+    Próximo
+</a>
+
+<span class="btn btn-default">Página @(Model.PageIndex) - @(Model.TotalPages) </span>

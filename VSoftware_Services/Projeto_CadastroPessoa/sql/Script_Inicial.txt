@@ -1,0 +1,16 @@
+
+
+Script criado automaticamente conforme mapeamento do projeto, via comando do Migration
+
+CREATE TABLE [Pessoas] (
+    [Id] int NOT NULL IDENTITY,
+    [Nome] varchar(200) NOT NULL,
+    [Documento] varchar(20) NOT NULL,
+    [DataNascimento] DateTime NOT NULL,
+    [Idade] integer NOT NULL,
+    [OpcaoSexual] integer NOT NULL,
+    [Profissao] varchar(200) NOT NULL,
+    CONSTRAINT [PK_Pessoas] PRIMARY KEY ([Id])
+);
+
+

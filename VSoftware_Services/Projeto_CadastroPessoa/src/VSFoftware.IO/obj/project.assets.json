@@ -1,0 +1,103 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "VSoftware.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/VSoftware.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VSoftware.Business.dll": {}
+        }
+      },
+      "VSoftware.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "VSoftware.Business": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VSoftware.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VSoftware.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VSoftware.Business/1.0.0": {
+      "type": "project",
+      "path": "../VSoftware.Business/VSoftware.Business.csproj",
+      "msbuildProject": "../VSoftware.Business/VSoftware.Business.csproj"
+    },
+    "VSoftware.Data/1.0.0": {
+      "type": "project",
+      "path": "../../VSoftware.Data/VSoftware.Data.csproj",
+      "msbuildProject": "../../VSoftware.Data/VSoftware.Data.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "VSoftware.Business >= 1.0.0",
+      "VSoftware.Data >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Prodwin\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Prodwin\\Desktop\\Cadastro_Pessoa_NetCore\\VSoftware_Services\\Projeto_CadastroPessoa\\src\\VSFoftware.IO\\VSoftware.IO.csproj",
+      "projectName": "VSoftware.IO",
+      "projectPath": "C:\\Users\\Prodwin\\Desktop\\Cadastro_Pessoa_NetCore\\VSoftware_Services\\Projeto_CadastroPessoa\\src\\VSFoftware.IO\\VSoftware.IO.csproj",
+      "packagesPath": "C:\\Users\\Prodwin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Prodwin\\Desktop\\Cadastro_Pessoa_NetCore\\VSoftware_Services\\Projeto_CadastroPessoa\\src\\VSFoftware.IO\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Prodwin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\Prodwin\\Desktop\\Cadastro_Pessoa_NetCore\\VSoftware_Services\\Projeto_CadastroPessoa\\src\\VSoftware.Business\\VSoftware.Business.csproj": {
+              "projectPath": "C:\\Users\\Prodwin\\Desktop\\Cadastro_Pessoa_NetCore\\VSoftware_Services\\Projeto_CadastroPessoa\\src\\VSoftware.Business\\VSoftware.Business.csproj"
+            },
+            "C:\\Users\\Prodwin\\Desktop\\Cadastro_Pessoa_NetCore\\VSoftware_Services\\Projeto_CadastroPessoa\\VSoftware.Data\\VSoftware.Data.csproj": {
+              "projectPath": "C:\\Users\\Prodwin\\Desktop\\Cadastro_Pessoa_NetCore\\VSoftware_Services\\Projeto_CadastroPessoa\\VSoftware.Data\\VSoftware.Data.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

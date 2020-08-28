@@ -1,0 +1,30 @@
+Imeplementar os Scripts para criação de banco.
+
+ ## extensões: ## 
+AutoMapper
+Microsoft.entityFrameworkCore
+FluentValidation
+
+Microsoft.entityFrameworkCore.Relation 
+
+Esta extensão é usada para mapear os campos padrões caso não for especificado nos DataAnottations das entidades
+exemplo de uso: 
+
+Na criação do contexto 
+			Caso não for mapeado alguma propriedade, aqui é setado como default o tipo dela
+			
+			foreach (var property in modelBuilder.Model.GetEntityTypes()
+											.SelectMany(e => e.GetProperties()
+											.Where(p => p.ClrType == typeof(string))))
+			{
+				property.SetColumnType("varchar(200)");
+			}
+
+instalado a biblioteca do font-awesome para os icones na tela de listagem (Alterar, excluir, visualizar...)
+
+biblioteca do MediatR
+
+MediatR.Extensions.Microsoft.DependencyInjection
+
+Foi meu primeiro contato com o MediatR, então creio que o projeto não esteja no padrão desejado,
+olhei algumas documentações e consegui implementar algo Básico, mas irei estudar mais a fundo.

@@ -1,0 +1,8 @@
+Conforme solicitado no desafio, foram utilizados os framewors necessários, porém com um detalhe,
+
+Esse é meu primeiro contato com o MediatR, implementei o básico desse framework no momento, porém preciso estudar mais a fundo.
+
+Para isso, criei dois projetos, um deles utilizando somente os serviços para validação e CRUD
+e outro projeto implementado o MediatR.
+
+Obs: também não foi implementado Identity e validações de segurança.
